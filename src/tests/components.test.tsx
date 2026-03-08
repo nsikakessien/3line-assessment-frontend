@@ -194,7 +194,9 @@ describe("App", () => {
   });
   it("renders roles from API", async () => {
     render(<App />);
-    await waitFor(() => expect(screen.getByText("Superadmin")).toBeDefined());
+    await waitFor(() =>
+      expect(screen.getAllByText("Superadmin")).toBeDefined(),
+    );
   });
   it("renders tab navigation", () => {
     render(<App />);
