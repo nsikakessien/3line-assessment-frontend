@@ -1,5 +1,5 @@
-import React, { useState, useEffect, useCallback } from "react";
-import { Download, Mail, Plus, Users } from "lucide-react";
+import { useState, useEffect, useCallback } from "react";
+import { Download, Mail, Plus } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { Label } from "@/components/ui/label";

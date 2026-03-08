@@ -1,8 +1,4 @@
-import * as React from "react";
-import {
-  Avatar as ShadAvatar,
-  AvatarFallback,
-} from "@/components/ui/avatar";
+import { Avatar as ShadAvatar, AvatarFallback } from "@/components/ui/avatar";
 import { cn } from "@/lib/utils";
 import { RoleUser } from "@/types/index";
 
@@ -24,16 +20,28 @@ interface RoleAvatarProps {
   className?: string;
 }
 
-export function RoleAvatar({ initials, index = 0, size = 28, className }: RoleAvatarProps) {
+export function RoleAvatar({
+  initials,
+  index = 0,
+  size = 28,
+  className,
+}: RoleAvatarProps) {
   const color = AVATAR_COLORS[index % AVATAR_COLORS.length];
   return (
     <ShadAvatar
-      className={cn("border-2 border-white -ml-1.5 first:ml-0 shrink-0", className)}
+      className={cn(
+        "border-2 border-white -ml-1.5 first:ml-0 shrink-0",
+        className,
+      )}
       style={{ width: size, height: size }}
     >
       <AvatarFallback
         className="text-xs font-semibold"
-        style={{ backgroundColor: color.bg, color: color.text, fontSize: size * 0.36 }}
+        style={{
+          backgroundColor: color.bg,
+          color: color.text,
+          fontSize: size * 0.36,
+        }}
       >
         {initials}
       </AvatarFallback>

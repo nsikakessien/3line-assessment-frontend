@@ -3,10 +3,8 @@ import { useRef, useEffect } from "react";
 import { Download, ArrowUp } from "lucide-react";
 import { Checkbox } from "@/components/ui/checkbox";
 import { Button } from "@/components/ui/button";
-import { Separator } from "@/components/ui/separator";
 import { AvatarGroup } from "@/components/Avatar";
 import StatusBadge from "@/components/StatusBadge";
-import { cn } from "@/lib/utils";
 import { UserRole, CheckedMap } from "@/types/index";
 
 function SkeletonRow() {

@@ -6,19 +6,17 @@ import {
   CheckSquare,
   FileText,
   Users,
-  Mic2,
   HelpCircle,
   Settings,
   Search,
   X,
   LogOut,
-  ChevronRight,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Separator } from "@/components/ui/separator";
 import { ScrollArea } from "@/components/ui/scroll-area";
-import { Avatar as ShadAvatar, AvatarFallback } from "@/components/ui/avatar";
+import { Avatar as ShadAvatar } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
 import { cn } from "@/lib/utils";
 import { NavItem } from "@/types/index";

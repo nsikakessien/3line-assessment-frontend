@@ -1,4 +1,3 @@
-import * as React from "react";
 import { Users, Check } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { ActiveRole } from "@/types/index";

@@ -1,4 +1,3 @@
-import * as React from "react";
 import { Check } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { RoleStatus } from "@/types/index";
@@ -16,9 +15,5 @@ export default function StatusBadge({ status }: StatusBadgeProps) {
       </Badge>
     );
   }
-  return (
-    <Badge variant="warning">
-      In Active
-    </Badge>
-  );
+  return <Badge variant="warning">In Active</Badge>;
 }
