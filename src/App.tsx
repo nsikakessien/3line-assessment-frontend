@@ -37,14 +37,8 @@ export default function App() {
           data-testid="mobile-header"
         >
           <div className="flex items-center gap-2.5">
-            <div
-              className="w-7 h-7 rounded-full flex items-center justify-center text-white text-xs font-bold"
-              style={{
-                background: "linear-gradient(135deg, #9E77ED 0%, #6941C6 100%)",
-              }}
-            >
-              U
-            </div>
+            <img src="/icons/logo.svg" alt="logo" />
+
             <span className="font-semibold text-sm text-foreground">
               Untitled UI
             </span>
